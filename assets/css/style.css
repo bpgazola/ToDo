@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* RESET */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-weight:inherit;
+	font-style:inherit;
+	font-size:100%;
+	font-family:inherit;
+	vertical-align:baseline;
+}
+/* FONTES */
+
+@font-face {
+	font-family:Lato Bold Italic;
+	src:url(../fonts/Lato-Bold-Italic.eot);
+	src:url(../fonts/Lato-Bold-Italic.ttf) format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:Lato Bold;
+	src:url(../fonts/Lato-Bold.eot);
+	src:url(../fonts/Lato-Bold.ttf) format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:Lato Regular;
+	src:url(../fonts/Lato-Regular.eot);
+	src:url(../fonts/Lato-Regular.ttf) format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:Ubuntu Bold;
+	src:url(../fonts/Ubuntu-Bold.eot);
+	src:url(../fonts/Ubuntu-Bold.ttf) format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:Ubuntu Regular;
+	src:url(../fonts/Ubuntu-Regular.eot);
+	src:url(../fonts/Ubuntu-Regular.ttf) format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+/* TÍTULOS, PARÁGRAFOS E LINKS */
+
+h1 {
+	font-family:Lato Bold;
+	font-size:35px;
+	color:#B2C3FB;
+	text-align:left;
+	line-height:45px;
+}
+p {
+	font-family:Ubuntu Regular;
+	font-size:22px;
+	color:#6F6F6E;
+	text-align:left;
+	line-height:32px;
+}
+a {
+	font-family:Ubuntu Bold;
+	color:#1B3C87;
+	text-decoration:none;
+	cursor:pointer;
+}
+/* COLUMNS, CONTAINER E ROW */
+
+.column {
+	position:relative;
+	float:left;
+}
+.column + .column {
+	margin-left:2.5%;
+}
+.column-1 {
+	width:10.3125%;
+}
+.column-2 {
+	width:23.125%;
+}
+.column-3 {
+	width:35.9375%;
+}
+.column-4 {
+	width:48.75%;
+}
+.column-5 {
+	width:61.5625%;
+}
+.column-6 {
+	width:74.375%;
+}
+.column-7 {
+	width:87.1875%;
+}
+.column-8 {
+	width:100%;
+}
+body {
+	overflow-x:hidden;
+}
+.container {
+	max-width:1040px;
+	min-width:940px;
+	margin:0 auto;
+}
+.row:after {
+	clear:both;
+}
+/* HEADER */
+
+header {
+	width:100%;
+}
+header #logo {
+	background-image:url(../images/ToDo_totvs_lgo.png);
+	width:126px;
+	height:74px;
+	float:left;
+	margin:1% 0 0 0;
+}
+/* NAVEGAÇÃO */
+.content-menu {
+	position:relative;
+}
+nav {
+	position:absolute;
+	float:left;
+	width:100%;
+	display:block;
+	margin:3% 0 0 0;
+	text-align:right;
+}
+nav li {
+	display:inline-block;
+	margin:0 1% 0 1%;
+}
+nav li a {
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#B2C3FB;
+	font-family:Ubuntu Bold;
+	font-size:15px;
+	display:block;
+	cursor:pointer;
+}
+/* BOTÃO */
+.btn {
+	color:#FFFFFF;
+	background-color:#B2C3FB;
+	font-family:Ubuntu Bold;
+	font-size:15px;
+	display:block;
+	padding:15px 30px;
+	text-align:center;
+	text-transform:uppercase;
+	text-decoration:none;
+	border-radius:8px;
+	cursor:pointer;
+}
+/* SEÇÕES */
+#spotlight {
+	width:100%;
+	min-height:470px;
+	position:relative;
+	float:left;
+	margin:5% 0 0 0;
+}
+#spotlight h1 {
+	margin:15% 0 5% 0;
+}
+#login {
+	width:100%;
+	min-height:300px;
+	position:relative;
+	float:left;
+	background-color:#EAF0FF;
+}
+#login h1 {
+	margin:3% 0 3% 0;
+}
+#login form {
+	margin:0 0 3% 0;
+}
+/* FORMULÁRIO */
+
+form {
+	display:block;
+}
+input[type=text] {
+	border-radius: 8px;
+	background-color:#FFFFFF;
+	border:solid 2px #B2C3FB;
+	padding:2%;
+	min-width:350px;
+	margin:0 5% 0 0;
+	outline:none;
+	font-family:Ubuntu Bold;
+	font-size:16px;
+	color:#1B3C87;
+	text-align:left;
+}
+::-webkit-input-placeholder {
+ color:#1B3C87;
+}
+
+:-moz-placeholder {
+ color:#1B3C87;
+}
+
+::-moz-placeholder {
+ color:#1B3C87;
+}
+
+:-ms-input-placeholder {
+ color:#1B3C87;
+}
+input[type=button], input[type=submit], input[type=reset] {
+	background: #46DBC9;
+	font-family:Ubuntu Bold;
+	font-size:15px;
+	display:block;
+	padding:20px 30px;
+	text-align:center;
+	text-transform:uppercase;
+	border-radius:8px;
+	cursor:pointer;
+	color:#FFFFFF;
+	float:right;
+}
